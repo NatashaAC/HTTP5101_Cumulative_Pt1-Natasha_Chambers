@@ -22,6 +22,7 @@ namespace HTTP5101_Cumulative_Pt1_Natasha_Chambers.Controllers
         // GET: Class/Show
         public ActionResult Show(int id)
         {
+            // Instantiating 
             ClassDataController controller = new ClassDataController();
             Class NewClass = controller.FindClass(id);
 

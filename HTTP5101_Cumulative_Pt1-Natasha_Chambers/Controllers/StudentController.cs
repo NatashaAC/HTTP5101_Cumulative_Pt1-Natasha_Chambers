@@ -12,6 +12,7 @@ namespace HTTP5101_Cumulative_Pt1_Natasha_Chambers.Controllers
         // GET: Student/List
         public ActionResult List()
         {
+            // Instantiating 
             StudentDataController controller = new StudentDataController();
             IEnumerable<Student> Students = controller.ListStudents();
 
@@ -21,6 +22,7 @@ namespace HTTP5101_Cumulative_Pt1_Natasha_Chambers.Controllers
         // GET: Student/Show
         public ActionResult Show(int id)
         {
+            // Instantiating 
             StudentDataController controller = new StudentDataController();
             Student NewStudent = controller.FindStudent(id);
 
