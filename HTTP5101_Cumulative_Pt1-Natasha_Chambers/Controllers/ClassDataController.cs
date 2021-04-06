@@ -73,9 +73,14 @@ namespace HTTP5101_Cumulative_Pt1_Natasha_Chambers.Controllers
         /// <summary>
         ///     Returns the information of a class based on the class id
         /// </summary>
-        /// <param name="id">an interger</param>
+        /// <param name="id">An interger</param>
         /// <returns>A Class</returns>
-        /// <example> GET api/ClassData/FindClass/9 </example>
+        /// <example> 
+        ///     GET api/ClassData/FindClass/9 
+        /// </example>
+        /// <example>
+        ///     GET api/ClassData/FindClass/3
+        /// </example>
         [HttpGet]
         [Route("api/ClassData/FindClass/{id}")]
         public Class FindClass(int id)
